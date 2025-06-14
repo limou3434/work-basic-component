@@ -12,4 +12,4 @@ work-redis/
 work-ollama/
 work-etcd/
 work-alist/
-work-caddt/Caddyfile
+work-caddy/Caddyfile
