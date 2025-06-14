@@ -1,0 +1,23 @@
+# 实时更新配置建议使用 sudo docker compose down work-caddy && sudo docker compose up -d --build work-caddy
+
+# 其中 XXX 是项目缩写
+
+# {$XXX_SITE_ADDRESS} { # 部署域名(生产环境替换)
+#     # 域名证书(生产环境打开)
+#     # tls /etc/caddy/ssl/edtechhub.com.cn/xxx.crt /etc/caddy/ssl/edtechhub.com.cn/xxx.key
+#
+#     # 日志服务
+#     log {
+#         level DEBUG
+#         output file ./log/access.log
+#         format json
+#     }
+#
+#     # 前端服务
+#     reverse_proxy http://连字命名法的项目全称-client:3000
+#
+#     # 接口服务
+#     handle_path /蛇形命名法项目全称_api/* {
+#         reverse_proxy http://连字命名法的项目全称:8000
+#     }
+# }
