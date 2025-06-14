@@ -1,0 +1,14 @@
+**.idea/
+**.next/
+**node_modules/
+**target/
+**dist/
+**.env
+**access.log
+
+work-mysql/memory/
+work-mysql/share/
+work-redis/
+work-ollama/
+work-etcd/
+work-alist/
